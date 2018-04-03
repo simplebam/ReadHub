@@ -1,0 +1,157 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.bugtags.library.plugin'
+
+android {
+    def app = rootProject.ext.android
+
+    compileSdkVersion app.compileSdkVersion
+    buildToolsVersion app.buildToolsVersion
+
+    defaultConfig {
+        applicationId app.applicationId
+        minSdkVersion app.minSdkVersion
+        targetSdkVersion app.targetSdkVersion
+        versionCode app.versionCode
+        versionName app.versionName
+        resConfigs app.resConfigs
+
+
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86'// 'x86_64', 'mips', 'mips64'
+        }
+
+        buildConfigField "String", "$rootProject.ext.fir_api_token.name", "\"$rootProject.ext.fir_api_token.value\""
+        buildConfigField "String", "$rootProject.ext.fir_app_id.name", "\"$rootProject.ext.fir_app_id.value\""
+        buildConfigField "String", "$rootProject.ext.alipay.name", "\"$rootProject.ext.alipay.value\""
+        buildConfigField "String", "$rootProject.ext.bugtags.name", "\"$rootProject.ext.bugtags.value\""
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("hubread.jks")
+            storePassword getLocalValue("STORE_PASSWORD")
+            keyAlias getLocalValue("KEY_ALIAS")
+            keyPassword getLocalValue("KEY_PASSWORD")
+        }
+        debug {
+            storeFile file("debug.keystore")
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+
+    compileOptions {
+        //使用JAVA8语法解析
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+def getLocalValue(String key) {
+    return getLocalValue(key, false)
+}
+
+def getLocalValue(String key, boolean quot) {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('./app/hubread.properties').newDataInputStream())
+    def value = properties.containsKey(key) ? properties.get(key) : ""
+    if (quot) {
+        value = "\"" + value + "\""
+    }
+    return value
+}
+
+bugtags {
+    appKey "e8a25c3dfe43986ee2860bb9a8195594"
+    appSecret "bacdc50389e320f2c7000f67f0c21897"
+    mappingUploadEnabled true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // 默认 UI
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.support_version"
+    implementation "com.android.support:design:$rootProject.ext.support_version"
+    implementation "com.android.support:cardview-v7:$rootProject.ext.support_version"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.support_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // RecycleViewBaseAdapter  https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.ext.base_recyclerview_adapter_helper_version"
+
+    // Dynamicbox https://github.com/medyo/Dynamicbox
+    implementation "com.github.medyo:dynamicbox:$rootProject.ext.dynamicbox_version"
+
+    //litepal https://github.com/LitePalFramework/LitePal
+    implementation "org.litepal.android:core:$rootProject.ext.litepal_version"
+
+    //fragment
+    implementation "me.yokeyword:fragmentation:$rootProject.ext.fragmentation_version"
+    implementation "me.yokeyword:fragmentation-swipeback:$rootProject.ext.fragmentation_version"
+
+    // rx
+    //RxJava https://github.com/ReactiveX/RxAndroid
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava_version"
+
+    //rxpermissions  https://github.com/tbruyelle/RxPermissions
+    implementation "com.tbruyelle.rxpermissions2:rxpermissions:$rootProject.ext.rxpermissions2_version"
+
+    //rxlifecycle  https://github.com/trello/RxLifecycle
+    implementation "com.trello.rxlifecycle2:rxlifecycle:$rootProject.ext.rxlifecycle_version"
+    implementation "com.trello.rxlifecycle2:rxlifecycle-android:$rootProject.ext.rxlifecycle_version"
+    implementation "com.trello.rxlifecycle2:rxlifecycle-components:$rootProject.ext.rxlifecycle_version"
+    implementation "com.trello.rxlifecycle2:rxlifecycle-android-lifecycle:$rootProject.ext.rxlifecycle_version"
+
+    //network
+
+    //gson https://github.com/google/gson
+    implementation "com.google.code.gson:gson:$rootProject.ext.gson_version"
+
+    //retrofit https://github.com/square/retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit_version"
+
+    //okhttp https://github.com/square/okhttp
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttp_version"
+
+    //assist相关的
+
+    //glide https://github.com/bumptech/glide
+    implementation "com.github.bumptech.glide:glide:$rootProject.ext.glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.ext.glide_version"
+
+    //butterknife https://github.com/JakeWharton/butterknife
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterknife_version"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknife_version"
+
+    //AlipayZeroSdk https://github.com/fython/AlipayZeroSdk
+    implementation "moe.feng:AlipayZeroSdk:$rootProject.ext.alipayzerosdk_version"
+
+    //AndroidUtilCode https://github.com/Blankj/AndroidUtilCode
+    implementation "com.blankj:utilcode:$rootProject.ext.android_utilcode_version"
+
+    //bugtags https://work.bugtags.com
+    implementation 'com.bugtags.library:bugtags-lib:latest.integration'
+
+    //multidex https://www.jianshu.com/p/f769ea6db2c1
+    implementation "com.android.support:multidex:$rootProject.ext.multidex_version"
+}

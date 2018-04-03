@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Android新特性介绍，ConstraintLayout完全解析 - CSDN博客
+      https://blog.csdn.net/guolin_blog/article/details/53122387-->
+    <TextView
+        android:id="@+id/tv_splash_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="H"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_u"
+        app:layout_constraintRight_toLeftOf="@+id/tv_splash_u"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_u"/>
+
+    <TextView
+        android:id="@+id/tv_splash_u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="u"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_b"
+        app:layout_constraintRight_toLeftOf="@+id/tv_splash_b"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_b"/>
+
+    <TextView
+        android:id="@+id/tv_splash_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="b"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_r"
+        app:layout_constraintRight_toLeftOf="@+id/tv_splash_r"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_r"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:id="@+id/tv_splash_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:padding="2dp"
+        android:text="R"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2_splash"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_splash_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="e"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_r"
+        app:layout_constraintLeft_toRightOf="@+id/tv_splash_r"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_r"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:id="@+id/tv_splash_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="a"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_e"
+        app:layout_constraintLeft_toRightOf="@+id/tv_splash_e"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_e"/>
+
+    <TextView
+        android:id="@+id/tv_splash_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="d"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_a"
+        app:layout_constraintLeft_toRightOf="@+id/tv_splash_a"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_a"/>
+
+
+    <TextView
+        android:id="@+id/tv_splash_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/color_70FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_splash_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv_splash_r"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61"/>
+
+</android.support.constraint.ConstraintLayout>
