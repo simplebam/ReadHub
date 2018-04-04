@@ -2,4 +2,55 @@
     <string name="app_name">HubRead</string>
     <string name="can_not_find_version_name">找不到版本号</string>
     <string name="version">版本</string>
+    <string name="leave_app">哎呦,你真的要离开我吗</string>
+    <string name="hot_topic">热门话题</string>
+    <string name="news">科技动态</string>
+    <string name="more">更多</string>
+    <string name="domain">Readhub.me</string>
+
+    <string name="author_time_format">%1$s·%2$s</string>
+    <string name="site_author_time_format">%1$s/%2$s·%3$s</string>
+    <string name="app_info">Readhub · Android</string>
+    <string name="app_info_format">Readhub · Android\n%1$s</string>
+    <string name="network_error">网络错误</string>
+    <string name="access_success">访问成功</string>
+    <string name="no_more_to_load">已经到底啦~</string>
+    <string name="aritcle">文章</string>
+    <string name="developer_news">开发者资讯</string>
+    <string name="block_chain_news">区块链快讯</string>
+
+    <string name="declare">该应用仅为个人兴趣所开发的 Readhub 第三方客户端，非无码科技官方产品。应用内所有资讯内容均来自无码科技产品
+    Readhub。
+  </string>
+
+    <string name="finish_reminder">再按一次返回键退出 Readhub</string>
+    <string name="open_by_browser">在浏览器中打开</string>
+    <string name="copy_link">复制链接</string>
+    <string name="share">分享</string>
+    <string name="copy_success">已复制到剪贴板</string>
+
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_go">前往主页</string>
+
+    <string name="personal_page">个人主页</string>
+    <string name="readhub_web">Readhub 网页版</string>
+    <string name="readhub_slogan">每天三分钟的科技新闻聚合阅读</string>
+
+    <string name="instant_read">即时查看</string>
+    <string name="go_origin_site">访问原网址 ></string>
+    <string name="source_fromat">来源：%1$s</string>
+    <string name="events">相关事件</string>
+    <string name="divider">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</string>
+    <string name="qr_code_to_download">以上资讯内容来自 Readhub.me\n扫码即可下载 Readhub 第三方客户端</string>
+    <string name="save_pic_success">成功保存至 /Pictures/readhub/ 文件夹下</string>
+    <string name="save_error">保存失败</string>
+    <string name="save_topic_share_view">生成分享图片并保存</string>
+
+    <string name="permission_failure_reminder">请授予相关权限，保证应用可正常运行</string>
+    <string name="submit_issue">反馈建议</string>
+    <string name="check_update">检查更新</string>
+    <string name="dialog_submit_issue_message">使用过程中如有问题反馈或相关建议，请通过以下方式提交：</string>
+    <string name="copy_email_success">已将开发者邮箱复制至剪贴板</string>
+    <string name="open_storage_permission_in_setting">请到设置界面获取授予存储权限</string>
+
 </resources>

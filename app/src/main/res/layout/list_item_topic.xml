@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_5"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/txt_topic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_18"
+            tools:text="原华为终端 CMO 杨柘加盟魅族，李楠或将担任魅蓝分公司总裁"/>
+
+        <TextView
+            android:id="@+id/txt_topic_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:textColor="@color/textLightGrey"
+            android:textSize="@dimen/text_size_16"
+            tools:text="这位对道家学说领悟颇深的 CMO，要怎么诠释属于年轻人的高端机呢？"/>
+
+        <View
+            android:id="@+id/divider_instant_read"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@color/dividerGrey"/>
+
+        <FrameLayout
+            android:id="@+id/frame_instant_read"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/txt_instant_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/padding_5"
+                android:drawableRight="@drawable/ic_instant_read"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:text="@string/instant_read"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_14"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -9,60 +9,60 @@
     <!--Android新特性介绍，ConstraintLayout完全解析 - CSDN博客
       https://blog.csdn.net/guolin_blog/article/details/53122387-->
     <TextView
-        android:id="@+id/tv_splash_h"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
-        android:padding="2dp"
-        android:text="H"
-        android:textColor="@color/color_FFFFFFFF"
-        android:textSize="26sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_u"
-        app:layout_constraintRight_toLeftOf="@+id/tv_splash_u"
-        app:layout_constraintTop_toTopOf="@+id/tv_splash_u"/>
-
-    <TextView
-        android:id="@+id/tv_splash_u"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
-        android:padding="2dp"
-        android:text="u"
-        android:textColor="@color/color_FFFFFFFF"
-        android:textSize="26sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_b"
-        app:layout_constraintRight_toLeftOf="@+id/tv_splash_b"
-        app:layout_constraintTop_toTopOf="@+id/tv_splash_b"/>
-
-    <TextView
-        android:id="@+id/tv_splash_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="0dp"
-        android:padding="2dp"
-        android:text="b"
-        android:textColor="@color/color_FFFFFFFF"
-        android:textSize="26sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_r"
-        app:layout_constraintRight_toLeftOf="@+id/tv_splash_r"
-        app:layout_constraintTop_toTopOf="@+id/tv_splash_r"
-        app:layout_constraintVertical_bias="0.0"/>
-
-    <TextView
         android:id="@+id/tv_splash_r"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
         android:padding="2dp"
         android:text="R"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_e"
+        app:layout_constraintRight_toLeftOf="@+id/tv_splash_e"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_e"/>
+
+    <TextView
+        android:id="@+id/tv_splash_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="e"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_a"
+        app:layout_constraintRight_toLeftOf="@+id/tv_splash_a"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_a"/>
+
+    <TextView
+        android:id="@+id/tv_splash_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="2dp"
+        android:text="a"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_d"
+        app:layout_constraintRight_toLeftOf="@+id/tv_splash_d"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_d"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:id="@+id/tv_splash_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:padding="2dp"
+        android:text="d"
         android:textColor="@color/color_FFFFFFFF"
         android:textSize="26sp"
         android:visibility="invisible"
@@ -72,53 +72,53 @@
         app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_splash_e"
+        android:id="@+id/tv_splash_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:padding="2dp"
-        android:text="e"
+        android:text="H"
         android:textColor="@color/color_FFFFFFFF"
         android:textSize="26sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_r"
-        app:layout_constraintLeft_toRightOf="@+id/tv_splash_r"
-        app:layout_constraintTop_toTopOf="@+id/tv_splash_r"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_d"
+        app:layout_constraintLeft_toRightOf="@+id/tv_splash_d"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_d"
         app:layout_constraintVertical_bias="0.0"/>
 
     <TextView
-        android:id="@+id/tv_splash_a"
+        android:id="@+id/tv_splash_u"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:padding="2dp"
-        android:text="a"
+        android:text="u"
         android:textColor="@color/color_FFFFFFFF"
         android:textSize="26sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_e"
-        app:layout_constraintLeft_toRightOf="@+id/tv_splash_e"
-        app:layout_constraintTop_toTopOf="@+id/tv_splash_e"/>
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_h"
+        app:layout_constraintLeft_toRightOf="@+id/tv_splash_h"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_h"/>
 
     <TextView
-        android:id="@+id/tv_splash_d"
+        android:id="@+id/tv_splash_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:padding="2dp"
-        android:text="d"
+        android:text="b"
         android:textColor="@color/color_FFFFFFFF"
         android:textSize="26sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_a"
-        app:layout_constraintLeft_toRightOf="@+id/tv_splash_a"
-        app:layout_constraintTop_toTopOf="@+id/tv_splash_a"/>
+        app:layout_constraintBottom_toBottomOf="@+id/tv_splash_u"
+        app:layout_constraintLeft_toRightOf="@+id/tv_splash_u"
+        app:layout_constraintTop_toTopOf="@+id/tv_splash_u"/>
 
 
     <TextView
@@ -146,7 +146,7 @@
         android:contentDescription="@string/app_name"
         android:src="@mipmap/ic_launcher"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/tv_splash_r"
+        app:layout_constraintBottom_toTopOf="@+id/tv_splash_d"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

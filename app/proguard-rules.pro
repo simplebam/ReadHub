@@ -128,3 +128,15 @@
 
 ## 解决注解混淆了引发的can't find referenced class javax.annotation.Nonnull
 -dontwarn javax.annotation.**
+
+##  如何去掉BottomNavigationView的Item大于3个时的动画效果
+-keepclassmembers class android.support.design.internal.BottomNavigationMenuView {
+    boolean mShiftingMode;
+}
+
+
+## configuration for Parceler
+-keep interface org.parceler.Parcel
+-keep @org.parceler.Parcel class * { *; }
+-keep class **$$Parcelable { *; }
+# End Parceler

@@ -49,15 +49,22 @@ PS:我基础比较薄弱,只会简单搭建一个web服务器,很多时候我都
     还是选择稳定升级知识好一点
 
 
-## 推荐-推荐的不仅仅是技术
+## 推荐项目
 * [DanteAndroid/Beauty: Just watch girls.](https://github.com/DanteAndroid/Beauty)
   * 推荐理由:没有MVP繁琐,但里面却涉及了Retrofit + Rxjava，让网络请求和解析数据更轻松、直观
   * 只保留了 Knowledge 中的美图功能，结构清晰更适合新手学习
   * 使用BRVAH，妈妈再也不用担心我写adapter头疼的问题了
 * [Android开源在线音乐播放器——波尼音乐 - 简书 ](https://www.jianshu.com/p/1c0f5c4f64fa),之前打算毕业设计做音乐播放器,但发现开发波尼音乐这样的App难度真的很大(这个App很好,命名规范以及架构清晰,没有过多使用第三方开源框架/依赖库),所以决定放弃转而做[Todolist](https://github.com/simplebam/Todolist)
-* [中文技术文档的写作规范 - DiyCode](https://www.diycode.cc/topics/941)
-* [彻底弄清support支持库，以及v4 v7重复依赖问题深究 - 简书 ](https://www.jianshu.com/p/f769ea6db2c1)
 
+
+## 推荐阅读
+* [中文技术文档的写作规范 - DiyCode](https://www.diycode.cc/topics/941)
+* [利用Android源码，轻松实现汉字转拼音功能 | 技术视界 ](http://blog.coderclock.com/2017/04/04/android/2017-04-04/)
+* [95%的人在面试时不会谈薪，包括你！](http://mp.weixin.qq.com/s/9lQVNVAIvjx0ouh6oEb9gQ)
+* [不想租房被坑？看这里！](http://mp.weixin.qq.com/s/huODXmxlVPa6vz2i0qjupw)
+* [面试热问|你最大的优点是什么？（回答技巧及范例） ](http://mp.weixin.qq.com/s/JZoYomF8HzhBzQwODcdnRw)
+* [面试：如何正确回答“你有什么问题想问我吗？” ](http://mp.weixin.qq.com/s/8kDrjTnD5xCfsZmq83hFWw)
+* [面试穿正装会加分么？ ](http://mp.weixin.qq.com/s/4p4nlHV5kQ5Q1q6Nk9BV0Q)
 
 
 ## Support

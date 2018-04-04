@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2196f3</color>
-    <color name="colorPrimaryDark">#2196f3</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#607D8B</color>
+    <color name="colorAccent">#A4A4A4</color>
 
-    <color name="color_FFFFFFFF">#ffffffff</color>
-    <color name="color_70FFFFFF">#70ffffff</color>
+    <color name="dividerGrey">#EDEDED</color>
+    <color name="dividerLightGrey">#AAACB4</color>
+
+    <color name="textDark">#222222</color>
+    <color name="textGrey">#545454</color>
+    <color name="textLightGrey">#AAACB4</color>
+    <color name="textBlue">#0076ff</color>
+    <color name="textDarkYellow">#736444</color>
+
+    <color name="backgroundGrey">#F7F7F7</color>
+    <color name="shareCardBackground">#f9f8f5</color>
+
+    <color name="color_FFFFFFFF">#FFFFFFFF</color>
+    <color name="color_70FFFFFF">#70FFFFFF</color>
+    <color name="color_2196F3">#2196F3</color>
+    <color name="color_128BEB">#128BEB</color>
+    <color name="color_607D8B">#607D8B</color>
+    <color name="color_AAACB4">#AAACB4</color>
+
+
 </resources>

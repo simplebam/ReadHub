@@ -95,6 +95,7 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
      什么原因......我用的魅族PRO5，大家遇到了就将文本中的感叹号替换掉就可以了",
      在网址[Notification常见样式总结 - 简书](https://www.jianshu.com/p/6c89c3792b90)
      评论区看到
+* 代码混淆:[5分钟搞定android混淆 - CSDN博客](https://blog.csdn.net/jdsjlzx/article/details/51853423)
 
 
 ### 项目中的用到的开源框架
@@ -112,21 +113,12 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
    * [RxJava之过滤操作符 - 行云间 - CSDN博客](http://blog.csdn.net/io_field/article/details/51378909)
    * [RxJava2使用过程中遇到的坑 - CSDN博客](http://blog.csdn.net/sr_code_plus/article/details/77189478)
    * [这是一份全面 & 详细 的RxJava操作符 使用攻略](http://mp.weixin.qq.com/s/2vDZ7h6SL-LR7n3FR6OMrw)
-* RxPermissions-动态申请权限
-   * [RxPermissions获取运行时权限 - 简书](https://www.jianshu.com/p/314e9e27592f)
-   * 当用户选择了“不再提示+拒绝”之后的处理,只能移步到系统设置去打开权限了
-   * 在onResume()中处理监听到设置了禁止后不再询问
 * Retrofit
    * [你真的会用Retrofit2吗?Retrofit2完全教程 - 简书](https://www.jianshu.com/p/308f3c54abdd)
    * [Android Retrofit 2.0使用 | 吴小龙同學](http://wuxiaolong.me/2016/01/15/retrofit/)
    * [Android Retrofit 2.0 使用-补充篇 - 简书](https://www.jianshu.com/p/93153b34310e)
-* rxlifecycle-管理RxJava生命周期
-   * [RxAndroid之Rxlifecycle使用 - 享受技术带来的快乐 - CSDN博客](http://blog.csdn.net/jdsjlzx/article/details/51527542)
-   * [Android 性能优化之利用 Rxlifecycle 解决 RxJava 内存泄漏 ](https://juejin.im/entry/58290ea2570c35005878ce8f)
-   * [不继承RxAppCompatActivity的情况下使用RxLifeCycle - CSDN博客 ](https://blog.csdn.net/kevinscsdn/article/details/78980010)
 * Gson-解析Json数据
-  * Gson教程(这个作者写的这四篇Gson文章真的很好):[你真的会用Gson吗?Gson使用指
-    南（一） - 简书 ](https://www.jianshu.com/p/e740196225a4)
+  * Gson教程(这个作者写的这四篇Gson文章真的很好):[你真的会用Gson吗?Gson使用指南（一） - 简书 ](https://www.jianshu.com/p/e740196225a4)
 * Glide
   * [Android图片加载框架最全解析（一），Glide的基本用法 - 郭霖的专栏](http://blog.csdn.net/guolin_blog/article/details/53759439)
     郭霖写的东西都很赞,值得推荐阅读
@@ -153,6 +145,8 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
   * [彻底弄清support支持库，以及v4 v7重复依赖问题深究 - 简书 ](https://www.jianshu.com/p/f769ea6db2c1)
 * Fragmentation
   * [Android框架之路——Fragmentation的使用（流式交互Demo） - CSDN博客](https://blog.csdn.net/bskfnvjtlyzmv867/article/details/70849322)
+* jsoup
+  * [jsoup开发指南,jsoup中文使用手册,jsoup中文文档 ](http://www.open-open.com/jsoup/)
 
 
 ### 项目开发遇到的问题
@@ -165,14 +159,30 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
   ```
   看到的时候我一脸懵圈,为什么compile会被移除,之后百度了一下,明白了Google的用意:
   [android gradle tools 3.X 中依赖，implement、api 指令 - CSDN博客](https://blog.csdn.net/soslinken/article/details/73114637)
-* 对于Android 项目中开源库 RxJava 系列时候都很倾向使用 rxlifecycle 来防止内存
-  泄漏,但 rxlifecycle 作者已经说明了准备逐步废弃该开源项目,推荐我们使用AutoDispose
-  ,本来我也打算使用该开源库,但
+* 现在很多项目都在使用 RxJava 开源库,但由于是静态的原因容易引发内存泄漏,一般都是
+  使用 rxlifecycle 进行管理其生命周期,现在rxlifecycle 作者已经说明了准备逐步废
+  弃该开源项目,链接:[为什么不使用 RxLifecycle? - 简书](https://www.jianshu.com/p/6627e97eba8d)
+  ,推荐我们使用AutoDispose,但项目中我个人认为可以使用 RxJava 自身返回的Dispose
+  进行切断,不必要加入这两个库
+  * 关于rxlifecycle教程:
+    * [RxAndroid之Rxlifecycle使用 - 享受技术带来的快乐 - CSDN博客](http://blog.csdn.net/jdsjlzx/article/details/51527542)
+    * [Android 性能优化之利用 Rxlifecycle 解决 RxJava 内存泄漏 ](https://juejin.im/entry/58290ea2570c35005878ce8f)
+    * [不继承RxAppCompatActivity的情况下使用RxLifeCycle - CSDN博客 ](https://blog.csdn.net/kevinscsdn/article/details/78980010)
+  * AutoDispose-管理RxJava生命周期
+    * [Android架构中添加AutoDispose解决RxJava内存泄漏 - CSDN博客 ](https://blog.csdn.net/mq2553299/article/details/79418068)
+* 本来打算使用 RxJava 配合 RxPermissions 使用,但还是按照模仿项目,毕竟学习MVP框架
+  * RxPermissions-动态申请权限
+    * [RxPermissions获取运行时权限 - 简书](https://www.jianshu.com/p/314e9e27592f)
+    * 当用户选择了“不再提示+拒绝”之后的处理,只能移步到系统设置去打开权限了
+    * 在onResume()中处理监听到设置了禁止后不再询问
+* 原项目使用的是Bugly增量更新,由于我使用Fir作为内测平台(提供查询版本的接口),所以
+  这里我简单使用了这个接口,不引入Bugly
 
 
 ### Android性能优化
 * 屏幕适配
   * [Android 屏幕适配方案 - CSDN博客 ](https://blog.csdn.net/lmj623565791/article/details/45460089)
+* [Android内存优化(使用SparseArray和ArrayMap代替HashMap) - CSDN博客 ](https://blog.csdn.net/simplebam/article/details/73467149)
 
 
 ### 项目中数据提供

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_30"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:gravity="center_horizontal"
+            android:text="@string/readhub_slogan"
+            android:textColor="@color/textGrey"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:id="@+id/txt_app_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:gravity="center_horizontal"
+            android:text="@string/app_info"
+            android:textColor="@color/textGrey"
+            android:textSize="@dimen/text_size_16"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@color/dividerGrey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:lineSpacingExtra="@dimen/margin_4"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_20"
+            android:text="@string/declare"
+            android:textColor="@color/textGrey"
+            android:textSize="@dimen/text_size_16"/>
+
+        <Button
+            android:id="@+id/btn_go_readhub_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_10"
+            android:text="@string/readhub_web"
+            android:textAllCaps="false"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/text_size_18"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@color/dividerGrey"/>
+
+        <Button
+            android:id="@+id/btn_check_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_10"
+            android:text="@string/check_update"
+            android:textAllCaps="false"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/text_size_18"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@color/dividerGrey"/>
+
+        <Button
+            android:id="@+id/btn_submit_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_10"
+            android:text="@string/submit_issue"
+            android:textAllCaps="false"
+            android:textColor="@color/textDark"
+            android:textSize="@dimen/text_size_18"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@color/dividerGrey"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
