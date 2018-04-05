@@ -17,6 +17,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/img_portrait"
             android:layout_width="@dimen/avatar_size"
             android:layout_height="@dimen/avatar_size"
             android:layout_gravity="center"

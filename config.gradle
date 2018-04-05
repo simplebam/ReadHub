@@ -9,7 +9,7 @@ ext {
             targetSdkVersion : 27,
             applicationId    : "com.yueyue.readhub",
             versionCode      : 2,
-            versionName      : "2.0",
+            versionName      : "2.2",
             resConfigs       : "zh",
     ]
 

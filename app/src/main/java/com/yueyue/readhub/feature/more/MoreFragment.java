@@ -56,7 +56,7 @@ public class MoreFragment extends BaseFragment {
         }
     }
 
-    @OnClick(R.id.btn_go_readhub_page)
+    @OnClick({R.id.btn_go_readhub_page, R.id.img_portrait})
     void goReadhubPage() {
         ((MainActivity) getContext()).findFragment(MainFragment.class)
                 .start(WebViewFragment.newInstance(Constant.READHUB_PAGE_URL));
