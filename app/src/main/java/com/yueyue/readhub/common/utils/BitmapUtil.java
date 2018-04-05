@@ -11,8 +11,6 @@ import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 
-import com.blankj.utilcode.util.CloseUtils;
-import com.blankj.utilcode.util.ToastUtils;
 import com.yueyue.readhub.R;
 import com.yueyue.readhub.component.PLog;
 
@@ -60,7 +58,13 @@ public class BitmapUtil {
             PLog.e(TAG, "saveImage: " + e.toString());
             e.printStackTrace();
         } finally {
-            CloseUtils.closeIOQuietly(fos);
+           if (fos!=null) {
+               try {
+                   fos.close();
+               } catch (IOException e) {
+                   e.printStackTrace();
+               }
+           }
         }
         return false;
     }

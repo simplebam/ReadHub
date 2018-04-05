@@ -9,9 +9,9 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.yueyue.readhub.R;
 import com.yueyue.readhub.base.BaseActivity;
+import com.yueyue.readhub.common.utils.ToastUtils;
 
 import me.yokeyword.fragmentation.anim.DefaultHorizontalAnimator;
 import me.yokeyword.fragmentation.anim.FragmentAnimator;

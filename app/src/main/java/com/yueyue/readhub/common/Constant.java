@@ -1,5 +1,6 @@
 package com.yueyue.readhub.common;
 
+import com.yueyue.readhub.BuildConfig;
 import com.yueyue.readhub.base.BaseApplication;
 
 import java.io.File;
@@ -9,7 +10,8 @@ import java.io.File;
  * desc   :
  */
 public interface Constant {
-    public static final String NET_CACHE = BaseApplication.getContext().getCacheDir().getPath() + File.separator + "NetCache";
+    //okHttp缓存地址
+    String NET_CACHE = BaseApplication.getContext().getCacheDir().getPath() + File.separator + "NetCache";
 
     //API 网址
     String API_HOST = "https://api.readhub.me";
@@ -22,7 +24,6 @@ public interface Constant {
     String BUNDLE_TOPIC_ID = "BUNDLE_TOPIC_ID";
 
     //其他
-    String BUGGLY_APP_ID = "547fe840fc";
-    String GITHUB_PAGE_URL = "https://github.com/BryantPang/ReadHub";
-    String PERSONAL_EMAIL = "chihopang10@gmail.com";
+    String SOURCE_URL = "https://github.com/simplebam/ReadHub";
+    String ALI_PAY = BuildConfig.ALiPayKey;
 }

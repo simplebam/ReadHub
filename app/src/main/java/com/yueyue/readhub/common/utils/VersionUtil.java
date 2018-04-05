@@ -8,7 +8,6 @@ import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.yueyue.readhub.BuildConfig;
 import com.yueyue.readhub.component.PLog;
 import com.yueyue.readhub.model.Version;
@@ -61,7 +60,7 @@ public class VersionUtil {
             PLog.e("getAppVersionName", "Exception:" + e);
             e.printStackTrace();
         }
-        return TextUtils.isEmpty(versionName) ? "" : versionName;
+        return TextUtils.isEmpty(versionName) ? "1.0" : versionName;
     }
 
     public static void checkVersion(Context context) {

@@ -13,6 +13,11 @@ ext {
             resConfigs       : "zh",
     ]
 
+    alipay = [
+            name : "ALiPayKey",
+            value: "a6x05642avlqmavn1qaak43"
+    ]
+
 
     fir_api_token = [
             name : "FirApiToken",
@@ -24,10 +29,6 @@ ext {
             value: "5ac2348d548b7a0a08fbe872"
     ]
 
-    alipay = [
-            name : "ALiPayKey",
-            value: "a6x05642avlqmavn1qaak43"
-    ]
 
     bugtags = [
             name : "BugtagsKey",
@@ -46,12 +47,9 @@ ext {
     retrofit_version='2.3.0'
     okhttp_version='3.9.1'
 
-    glide_version='4.6.1'
     jsoup_version='1.11.2'
     butterknife_version='8.8.1'
-    litepal_version='1.6.1'
-    android_utilcode_version='1.13.6'
-    alipayzerosdk_version='1.1'
     parceler_version='1.1.10'
     multidex_version='1.0.3'
+    alipayzerosdk_version='1.1'
 }

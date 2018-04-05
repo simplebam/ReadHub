@@ -11,7 +11,7 @@
     <string name="author_time_format">%1$s·%2$s</string>
     <string name="site_author_time_format">%1$s/%2$s·%3$s</string>
     <string name="app_info">Readhub · Android</string>
-    <string name="app_info_format">Readhub · Android\n%1$s</string>
+    <string name="app_info_format">Readhub · Version %1$s</string>
     <string name="network_error">网络错误</string>
     <string name="access_success">访问成功</string>
     <string name="no_more_to_load">已经到底啦~</string>
@@ -52,5 +52,9 @@
     <string name="dialog_submit_issue_message">使用过程中如有问题反馈或相关建议，请通过以下方式提交：</string>
     <string name="copy_email_success">已将开发者邮箱复制至剪贴板</string>
     <string name="open_storage_permission_in_setting">请到设置界面获取授予存储权限</string>
+    <string name="source_url">项目源码</string>
+    <string name="donate_me">捐赠作者</string>
+    <string name="have_no_alipay_client">没有安装支付宝客户端,请先安装</string>
+    <string name="openning_alipay_client">正在打开支付宝客户端</string>
 
 </resources>

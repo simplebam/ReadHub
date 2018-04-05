@@ -8,7 +8,7 @@
 <a href="../art/main1.png"><img src="../art/main1.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="../art/main2.png"><img src="../art/main2.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
 <a href="../art/main3.png"><img src="../art/main3.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="../art/main4.png"><img src="../art/main4.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
 
-App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-preview/app-debug.apk)
+App体验:[ReadHub.apk](https://fir.im/readub)
 
 
 ### 项目中用到的知识
@@ -102,10 +102,6 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
 ### 项目中的用到的开源框架
 * ButterKnife
   * [ButterKnife8.5.1 使用方法教程总结 - CSDN博客](http://blog.csdn.net/niubitianping/article/details/54893571)
-* LitePal-Android高性能数据库框架
-  * [Android数据库高手秘籍(一)——SQLite命令 - 郭霖的专栏 - CSDN博客](http://blog.csdn.net/guolin_blog/article/details/38461239)
-  * [LitePal 1.6.0版本来袭，数据加解密功能保障你的应用数据安全](http://mp.weixin.qq.com/s/TSp36cnKLxUmAHjT86UCrQ)
-* bugtags-移动时代首选 Bug 管理系统:[Bugtags 使用说明 - CSDN博客](http://blog.csdn.net/ObjectivePLA/article/details/51037804)
 * RxJava
    * 目前最好的RxJava入门文章,没有之一:[给初学者的RxJava2.0教程(一) - 简书 ](https://www.jianshu.com/p/464fa025229e)
      以及对应的项目教程源码:[ssseasonnn/RxJava2Demo](https://github.com/ssseasonnn/RxJava2Demo)
@@ -120,27 +116,6 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
    * [Android Retrofit 2.0 使用-补充篇 - 简书](https://www.jianshu.com/p/93153b34310e)
 * Gson-解析Json数据
   * Gson教程(这个作者写的这四篇Gson文章真的很好):[你真的会用Gson吗?Gson使用指南（一） - 简书 ](https://www.jianshu.com/p/e740196225a4)
-* Glide
-  * [Android图片加载框架最全解析（一），Glide的基本用法 - 郭霖的专栏](http://blog.csdn.net/guolin_blog/article/details/53759439)
-    郭霖写的东西都很赞,值得推荐阅读
-  * [Google推荐的图片加载库Glide介绍 - 泡在网上的日子](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0327/2650.html)
-  * [Glide 一个专注于平滑滚动的图片加载和缓存库 - 简书](https://www.jianshu.com/p/4a3177b57949)
-  * [Glide V4 框架新特性（Migrating from v3 to v4） - HeXinGen的博客 - CSDN博客](http://blog.csdn.net/hexingen/article/details/72578066)
-* glide-transformations
-  * 网上出现了很多Glide的图片变换开源库，其中做的最出色的应该要数glide-transformations这个库了
-  * [Android图片加载框架最全解析（五），Glide强大的图片变换功能 - 郭霖](http://blog.csdn.net/guolin_blog/article/details/71524668)
-  * [Glide、Picasso、Fresco进阶 - 图像转换 - 简书 ](https://www.jianshu.com/p/976c86fa72bc)
-  * 还是不会用Glide的话,那么推荐使用[panpf/sketch: Sketch 是 Android 上一个
-    强大且全面的图片加载器,支持 GIF，手势缩放以及分块显示超大图片](https://github.com/panpf/sketch)
-    无需关心TAG，因为根本就不使用TAG来关联，也自带多种图片处理效果，圆形的、圆角
-    的、高斯模糊的等等
-* [AlipayZeroSdk-支付宝转账工具类](https://github.com/fython/AlipayZeroSdk)
-   * [如何在app中打开支付宝进行打赏开发者 - CSDN博客](http://blog.csdn.net/qq_24531461/article/details/72858868)
-   * 二维码可以在支付宝手机客户端或者网页[支付宝条码支付 - 扫码](https://qr.alipay.com/paipai/personal.htm)
-     获取,得到的后面参数不太一样的,然后使用[在线二维码解码器](http://jiema.wwei.cn/)
-     解析出参数即可
-   * 这里也有很多人推荐使用第三方支付集成库易支付:[EasyPay(易支付)，两分钟集成三种Android支付方式 - 简书](https://www.jianshu.com/p/bd4d44c33532)
-     ,开源项目地址:[yansongda/easyPay - 码云 Gitee.com ](https://gitee.com/yansongda/pay)
 * Multidex
   * 解决"著名的方法数超过 64K 的应用异常"的问题
   * [彻底弄清support支持库，以及v4 v7重复依赖问题深究 - 简书 ](https://www.jianshu.com/p/f769ea6db2c1)
@@ -178,6 +153,11 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
     * 在onResume()中处理监听到设置了禁止后不再询问
 * 原项目使用的是Bugly增量更新,由于我使用Fir作为内测平台(提供查询版本的接口),所以
   这里我简单使用了这个接口,不引入Bugly
+* 在 MoreFragment 这里使用 NestedScrollView 时候,出现了底部显示不完全的问题
+  (遮挡了捐赠作者这个栏目),之后百度了文章:[ScrollView嵌套Linearlayout显示不全的解决办法 - CSDN博客](https://blog.csdn.net/codenoodles/article/details/50904274)
+   ,这里给出了思路,直觉告诉我了是MainFragment的底部栏目遮挡了捐赠作者这个栏目,
+   之后我试了一下在 NestedScrollView 直接子布局加上了
+   android:paddingBottom="@dimen/padding_56" ,然后就完美搞定了
 
 
 ### 项目中数据提供

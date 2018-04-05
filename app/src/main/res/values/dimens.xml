@@ -5,13 +5,16 @@
   <dimen name="margin_30">30dp</dimen>
   <dimen name="margin_20">20dp</dimen>
   <dimen name="margin_10">10dp</dimen>
+  <dimen name="margin_8">8dp</dimen>
   <dimen name="margin_5">5dp</dimen>
   <dimen name="margin_4">4dp</dimen>
 
   <!-- padding -->
   <dimen name="padding_5">5dp</dimen>
+  <dimen name="padding_8">8dp</dimen>
   <dimen name="padding_10">10dp</dimen>
   <dimen name="padding_20">20dp</dimen>
+  <dimen name="padding_50">50dp</dimen>
 
   <!-- height -->
   <dimen name="bottom_navigation_view_height">56dp</dimen>
@@ -43,5 +46,8 @@
   <dimen name="avatar_size">80dp</dimen>
   <dimen name="fab_size">56dp</dimen>
   <dimen name="time_line_oval_size">5dp</dimen>
+  <dimen name="padding_56">56dp</dimen>
+
+
 
 </resources>

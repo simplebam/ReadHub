@@ -23,9 +23,9 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.yueyue.readhub.R;
 import com.yueyue.readhub.common.Constant;
+import com.yueyue.readhub.common.utils.ToastUtils;
 import com.yueyue.readhub.model.Topic;
 
 import org.parceler.Parcels;

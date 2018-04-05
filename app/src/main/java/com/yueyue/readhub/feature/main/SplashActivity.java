@@ -15,10 +15,10 @@ import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.AppUtils;
-import com.blankj.utilcode.util.ScreenUtils;
 import com.yueyue.readhub.R;
 import com.yueyue.readhub.common.AnimatorListenerImpl;
+import com.yueyue.readhub.common.utils.ScreenUtils;
+import com.yueyue.readhub.common.utils.VersionUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -152,7 +152,7 @@ public class SplashActivity extends AppCompatActivity {
                 mIvLogo.setVisibility(View.VISIBLE);
                 mTvName.setVisibility(View.VISIBLE);
                 StringBuilder sb = new StringBuilder(getString(R.string.version));
-                sb.append(": V ").append(AppUtils.getAppVersionName());
+                sb.append(": V ").append(VersionUtil.getAppVersionName(SplashActivity.this));
                 mTvName.setText(sb.toString());
             }
         });

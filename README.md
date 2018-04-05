@@ -3,12 +3,14 @@
 
 ## 功能
 每天三分钟的科技新闻聚合阅读; <br/>
+离线缓存,使得离线情况也可以查看; <br/>
+版本更新,可以学习版本更新; <br/>
 
 原作者Github项目:[BryantPang/ReadHub: ReadHub 第三方安卓客户端 ](https://github.com/BryantPang/ReadHub) <br/>
 <a href="./art/main1.png"><img src="./art/main1.png" width="40%" width="40%"/></a><img height="0" width="8px"/><a href="./art/main2.png"><img src="./art/main2.png" width="40%" width="40%"/></a><img height="0" width="8px"/>
 <a href="./art/main3.png"><img src="./art/main3.png" width="40%" width="40%"/></a><img height="0" width="8px"/><a href="./art/main4.png"><img src="./art/main4.png" width="40%" width="40%"/></a><img height="0" width="8px"/>
 
-App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-preview/app-debug.apk)
+App体验:[ReadHub.apk](https://fir.im/readub)
 
 
 

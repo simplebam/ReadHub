@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.Utils;
 import com.yueyue.readhub.R;
+import com.yueyue.readhub.base.BaseApplication;
 import com.yueyue.readhub.base.BaseViewHolder;
 import com.yueyue.readhub.feature.common.WebViewFragment;
 import com.yueyue.readhub.feature.main.MainFragment;
@@ -39,16 +39,16 @@ public class NewsViewHolder extends BaseViewHolder<Topic> {
 
         String time;
         if ((!TextUtils.isEmpty(value.getAuthorName())) && (!TextUtils.isEmpty(value.getSiteName()))) {
-            time = Utils.getApp().getString(R.string.site_author_time_format,
+            time = BaseApplication.getContext().getString(R.string.site_author_time_format,
                     value.getSiteName(), value.getAuthorName(),
                     value.getPublishDateCountDown());
         } else if (TextUtils.isEmpty(value.getAuthorName()) && TextUtils.isEmpty(value.getSiteName())) {
             time = value.getPublishDateCountDown();
         } else if (TextUtils.isEmpty(value.getSiteName())) {
-            time = Utils.getApp().getString(R.string.author_time_format, value.getAuthorName(),
+            time = BaseApplication.getContext().getString(R.string.author_time_format, value.getAuthorName(),
                             value.getPublishDateCountDown());
         } else {
-            time = Utils.getApp().getString(R.string.author_time_format, value.getSiteName(),
+            time = BaseApplication.getContext().getString(R.string.author_time_format, value.getSiteName(),
                             value.getPublishDateCountDown());
         }
         mTxtTime.setText(time);

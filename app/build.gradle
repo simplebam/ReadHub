@@ -21,8 +21,8 @@ android {
         }
 
         buildConfigField "String", "$rootProject.ext.fir_api_token.name", "\"$rootProject.ext.fir_api_token.value\""
-        buildConfigField "String", "$rootProject.ext.fir_app_id.name", "\"$rootProject.ext.fir_app_id.value\""
         buildConfigField "String", "$rootProject.ext.alipay.name", "\"$rootProject.ext.alipay.value\""
+        buildConfigField "String", "$rootProject.ext.fir_app_id.name", "\"$rootProject.ext.fir_app_id.value\""
         buildConfigField "String", "$rootProject.ext.bugtags.name", "\"$rootProject.ext.bugtags.value\""
 
         multiDexEnabled true
@@ -128,8 +128,8 @@ dependencies {
     implementation "com.jakewharton:butterknife:$rootProject.ext.butterknife_version"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknife_version"
 
-    //AndroidUtilCode https://github.com/Blankj/AndroidUtilCode
-    implementation "com.blankj:utilcode:$rootProject.ext.android_utilcode_version"
+    //AlipayZeroSdk https://github.com/fython/AlipayZeroSdk
+    implementation "moe.feng:AlipayZeroSdk:$rootProject.ext.alipayzerosdk_version"
 
     //parceler https://github.com/johncarl81/parceler
     implementation "org.parceler:parceler-api:$rootProject.ext.parceler_version"

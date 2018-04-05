@@ -1,5 +1,7 @@
 package com.yueyue.readhub.feature.more;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.NestedScrollView;
@@ -10,11 +12,12 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.bugtags.library.Bugtags;
 import com.yueyue.readhub.R;
 import com.yueyue.readhub.base.BaseFragment;
 import com.yueyue.readhub.common.Constant;
+import com.yueyue.readhub.common.utils.AlipayUtil;
+import com.yueyue.readhub.common.utils.ToastUtils;
 import com.yueyue.readhub.common.utils.VersionUtil;
 import com.yueyue.readhub.feature.common.WebViewFragment;
 import com.yueyue.readhub.feature.main.MainActivity;
@@ -59,7 +62,7 @@ public class MoreFragment extends BaseFragment {
                 .start(WebViewFragment.newInstance(Constant.READHUB_PAGE_URL));
     }
 
-    @OnClick(R.id.btn_check_update)
+    @OnClick({R.id.btn_check_update, R.id.txt_app_info})
     void checkUpdate() {
         VersionUtil.checkVersion(getContext());
     }
@@ -86,6 +89,25 @@ public class MoreFragment extends BaseFragment {
                 })
                 .show();
 
+    }
+
+    @OnClick(R.id.btn_source_url)
+    void openSourceUrl() {
+        Uri uri = Uri.parse(Constant.SOURCE_URL);   //指定网址
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);           //指定Action
+        intent.setData(uri);                            //设置Uri
+        startActivity(intent);        //启动Activity
+    }
+
+    @OnClick(R.id.btn_donate_me)
+    void donateMe() {
+        if (!AlipayUtil.hasInstalledAlipayClient()) {
+            ToastUtils.showShort(R.string.have_no_alipay_client);
+            return;
+        }
+        AlipayUtil.startAlipayClient(getActivity(), Constant.ALI_PAY);
+        ToastUtils.showShort(R.string.openning_alipay_client);
     }
 
     public void onTabClick() {

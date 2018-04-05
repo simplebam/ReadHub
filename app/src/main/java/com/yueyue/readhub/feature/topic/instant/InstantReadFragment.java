@@ -12,12 +12,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.ToastUtils;
-import com.blankj.utilcode.util.Utils;
 import com.yueyue.readhub.R;
+import com.yueyue.readhub.base.BaseApplication;
 import com.yueyue.readhub.base.BaseDialogFragment;
 import com.yueyue.readhub.base.mvp.INetworkView;
 import com.yueyue.readhub.common.Constant;
+import com.yueyue.readhub.common.utils.ToastUtils;
 import com.yueyue.readhub.component.PLog;
 import com.yueyue.readhub.feature.common.WebViewFragment;
 import com.yueyue.readhub.feature.main.MainActivity;
@@ -139,7 +139,7 @@ public class InstantReadFragment extends BaseDialogFragment<InstantReadPresenter
                     //使用本地 css 优化阅读视图
                     WebResourceResponse resourceResponse = null;
                     try {
-                        InputStream in = Utils.getApp().getAssets().open("css/mobi.css");
+                        InputStream in = BaseApplication.getContext().getAssets().open("css/mobi.css");
                         resourceResponse = new WebResourceResponse("text/css", "UTF-8", in);
                     } catch (IOException e) {
                         PLog.e(TAG, "shouldInterceptRequest: " + e.toString());

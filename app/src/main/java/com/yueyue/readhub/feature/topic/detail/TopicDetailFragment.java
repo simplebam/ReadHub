@@ -21,7 +21,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.yueyue.readhub.R;
 import com.yueyue.readhub.base.BaseAdapter;
 import com.yueyue.readhub.base.BaseSwipeBackFragment;
@@ -29,6 +28,7 @@ import com.yueyue.readhub.base.BaseViewHolder;
 import com.yueyue.readhub.base.mvp.INetworkView;
 import com.yueyue.readhub.common.Constant;
 import com.yueyue.readhub.common.utils.BitmapUtil;
+import com.yueyue.readhub.common.utils.ToastUtils;
 import com.yueyue.readhub.feature.common.WebViewFragment;
 import com.yueyue.readhub.feature.main.MainActivity;
 import com.yueyue.readhub.model.Topic;
