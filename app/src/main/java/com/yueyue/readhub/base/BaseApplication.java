@@ -26,7 +26,7 @@ public class BaseApplication extends Application {
         //初始化工具类AndroidUtilCode
         Utils.init(this);
 
-        Bugtags.start("e8a25c3dfe43986ee2860bb9a8195594", this, Bugtags.BTGInvocationEventBubble);
+        Bugtags.start("373d68a977c6f1eaa9aa5d0addb5ffde", this, Bugtags.BTGInvocationEventBubble);
         CrashHandler.init(new CrashHandler(this));
 
         Fragmentation.builder()

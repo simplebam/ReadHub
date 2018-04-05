@@ -5,7 +5,8 @@
 每天三分钟的科技新闻聚合阅读; <br/>
 
 原作者Github项目:[BryantPang/ReadHub: ReadHub 第三方安卓客户端 ](https://github.com/BryantPang/ReadHub) <br/>
-<a href="./art/coolweather_home.png"><img src="./art/coolweather_home.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="./art/coolweather_list.png"><img src="./art/coolweather_list.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
+<a href="./art/main1.png"><img src="./art/main1.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="./art/main2.png"><img src="./art/main2.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
+<a href="./art/main3.png"><img src="./art/main3.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="./art/main4.png"><img src="./art/main4.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
 
 App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-preview/app-debug.apk)
 

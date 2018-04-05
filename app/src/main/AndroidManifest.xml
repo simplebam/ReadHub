@@ -17,9 +17,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".feature.main.SplashActivity"
-            android:launchMode="singleTask"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -27,7 +25,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".feature.main.MainActivity"/>
+        <activity
+            android:name=".feature.main.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"/>
 
     </application>
 

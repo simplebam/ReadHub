@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HubRead</string>
+    <string name="app_name">ReadHub</string>
     <string name="can_not_find_version_name">找不到版本号</string>
     <string name="version">版本</string>
     <string name="leave_app">哎呦,你真的要离开我吗</string>

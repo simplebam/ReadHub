@@ -1,7 +1,7 @@
 package com.yueyue.readhub.feature.more;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.annotation.NonNull;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
@@ -28,7 +28,7 @@ import butterknife.OnClick;
  * desc   :
  */
 public class MoreFragment extends BaseFragment {
-    public static final String TAG = "MoreFragment";
+    public static final String TAG = MoreFragment.class.getSimpleName();
 
     public static MoreFragment newInstance() {
         return new MoreFragment();
@@ -45,7 +45,7 @@ public class MoreFragment extends BaseFragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         String version = VersionUtil.getAppVersionName(getContext());
         if (!TextUtils.isEmpty(version)) {
@@ -72,6 +72,7 @@ public class MoreFragment extends BaseFragment {
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         editText.setLayoutParams(parmas);
         editText.setCursorVisible(true);
+
 
         new AlertDialog.Builder(getActivity())
                 .setView(editText)

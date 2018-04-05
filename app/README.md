@@ -5,7 +5,8 @@
 每天三分钟的科技新闻聚合阅读; <br/>
 
 原作者Github项目:[BryantPang/ReadHub: ReadHub 第三方安卓客户端 ](https://github.com/BryantPang/ReadHub) <br/>
-<a href="./art/coolweather_home.png"><img src="./art/coolweather_home.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="./art/coolweather_list.png"><img src="./art/coolweather_list.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
+<a href="../art/main1.png"><img src="../art/main1.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="../art/main2.png"><img src="../art/main2.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
+<a href="../art/main3.png"><img src="../art/main3.png" width="20%" height="20%"/></a><img height="0" width="8px"/><a href="../art/main4.png"><img src="../art/main4.png" width="20%" height="20%"/></a><img height="0" width="8px"/>
 
 App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-preview/app-debug.apk)
 
@@ -179,13 +180,14 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
   这里我简单使用了这个接口,不引入Bugly
 
 
-### Android性能优化
-* 屏幕适配
-  * [Android 屏幕适配方案 - CSDN博客 ](https://blog.csdn.net/lmj623565791/article/details/45460089)
-* [Android内存优化(使用SparseArray和ArrayMap代替HashMap) - CSDN博客 ](https://blog.csdn.net/simplebam/article/details/73467149)
-
-
 ### 项目中数据提供
+* ReadHub
+ * 热门话题 https://api.readhub.me/topic?lastCursor=&pageSize=20
+ * 即时预览 https://api.readhub.me/topic/instantview?topicId=2ywi9i7lBj7
+ * 科技动态 https://api.readhub.me/news?lastCursor=1522808400000&pageSize=10
+ * 开发者资讯 https://api.readhub.me/technews?lastCursor=1522808400000&pageSize=10
+ * 区块链快讯 https://api.readhub.me/blockchain?lastCursor=1522808460000&pageSize=10
+ * 招聘行情 https://api.readhub.me/jobs?lastCursor=&pageSize=10
 * App内测:[fir.im - 免费应用内测托管平台|iOS/Android应用内测分发](https://fir.im/)
   * 关于版本更新的话,fir会提供相关的接口,说明:[fir.im - 版本查询](https://fir.im/docs/version_detection)
     其中字段id是应用ID，在"应用管理"的"基本信息"
