@@ -68,7 +68,7 @@ PS:我基础比较薄弱,只会简单搭建一个web服务器,很多时候我都
 * [面试热问|你最大的优点是什么？（回答技巧及范例） ](http://mp.weixin.qq.com/s/JZoYomF8HzhBzQwODcdnRw)
 * [面试：如何正确回答“你有什么问题想问我吗？” ](http://mp.weixin.qq.com/s/8kDrjTnD5xCfsZmq83hFWw)
 * [面试穿正装会加分么？ ](http://mp.weixin.qq.com/s/4p4nlHV5kQ5Q1q6Nk9BV0Q)
-
+* [面试最容易被刷的问题：你的缺点是什么？ ](http://mp.weixin.qq.com/s/4rQRiLJPJqjAZi4eaYpbSA)
 
 ## Support
 最近在项目中学习,在项目中成长,所以亲们会看到我在项目里面写博客啦,哈哈哈 <br/>
