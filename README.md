@@ -58,6 +58,7 @@ PS:我基础比较薄弱,只会简单搭建一个web服务器,很多时候我都
   * 只保留了 Knowledge 中的美图功能，结构清晰更适合新手学习
   * 使用BRVAH，妈妈再也不用担心我写adapter头疼的问题了
 * [Android开源在线音乐播放器——波尼音乐 - 简书 ](https://www.jianshu.com/p/1c0f5c4f64fa),之前打算毕业设计做音乐播放器,但发现开发波尼音乐这样的App难度真的很大(这个App很好,命名规范以及架构清晰,没有过多使用第三方开源框架/依赖库),所以决定放弃转而做[Todolist](https://github.com/simplebam/Todolist)
+* MVP学习Demo:[qingmei2/MvpArchitecture-Android: The MVP Architecture in Android. ](https://github.com/qingmei2/MvpArchitecture-Android)
 
 
 ## 推荐阅读
