@@ -182,12 +182,12 @@ App体验:[ReadHub.apk](https://github.com/BryantPang/ReadHub/raw/master/apk-pre
 
 ### 项目中数据提供
 * ReadHub
- * 热门话题 https://api.readhub.me/topic?lastCursor=&pageSize=20
- * 即时预览 https://api.readhub.me/topic/instantview?topicId=2ywi9i7lBj7
- * 科技动态 https://api.readhub.me/news?lastCursor=1522808400000&pageSize=10
- * 开发者资讯 https://api.readhub.me/technews?lastCursor=1522808400000&pageSize=10
- * 区块链快讯 https://api.readhub.me/blockchain?lastCursor=1522808460000&pageSize=10
- * 招聘行情 https://api.readhub.me/jobs?lastCursor=&pageSize=10
+  * 热门话题 https://api.readhub.me/topic?lastCursor=&pageSize=20
+  * 即时预览 https://api.readhub.me/topic/instantview?topicId=2ywi9i7lBj7
+  * 科技动态 https://api.readhub.me/news?lastCursor=1522808400000&pageSize=10
+  * 开发者资讯 https://api.readhub.me/technews?lastCursor=1522808400000&pageSize=10
+  * 区块链快讯 https://api.readhub.me/blockchain?lastCursor=1522808460000&pageSize=10
+  * 招聘行情 https://api.readhub.me/jobs?lastCursor=&pageSize=10
 * App内测:[fir.im - 免费应用内测托管平台|iOS/Android应用内测分发](https://fir.im/)
   * 关于版本更新的话,fir会提供相关的接口,说明:[fir.im - 版本查询](https://fir.im/docs/version_detection)
     其中字段id是应用ID，在"应用管理"的"基本信息"
