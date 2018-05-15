@@ -102,6 +102,7 @@ App体验:[ReadHub.apk](https://fir.im/readub)
 ### 项目中的用到的开源框架
 * ButterKnife
   * [ButterKnife8.5.1 使用方法教程总结 - CSDN博客](http://blog.csdn.net/niubitianping/article/details/54893571)
+  * [ButterKnife使用详解 - CSDN博客 ](https://blog.csdn.net/itjianghuxiaoxiong/article/details/50177549)  
 * RxJava
    * 目前最好的RxJava入门文章,没有之一:[给初学者的RxJava2.0教程(一) - 简书 ](https://www.jianshu.com/p/464fa025229e)
      以及对应的项目教程源码:[ssseasonnn/RxJava2Demo](https://github.com/ssseasonnn/RxJava2Demo)
